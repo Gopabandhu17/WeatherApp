@@ -35,7 +35,7 @@ class WeatherVC: UIViewController, UITextFieldDelegate, WeatherDataDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        textField.resignFirstResponder()
+        if textField == txtCityName { textField.resignFirstResponder() }
         return true
     }
     
