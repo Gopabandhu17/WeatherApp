@@ -10,12 +10,14 @@ import UIKit
 
 class WeatherVC: UIViewController, UITextFieldDelegate, WeatherDataDelegate {
 
+    //MARK: Outlets
     @IBOutlet weak var txtCityName: UITextField!
     @IBOutlet weak var lblTemp: UILabel!
     @IBOutlet weak var lblCity: UILabel!
     @IBOutlet weak var imgWeather: UIImageView!
     @IBOutlet weak var lblDescription: UILabel!
     
+    //MARK: Properties
     var objWeatherManager = WeatherManager()
     
     //TODO:- View Methods
