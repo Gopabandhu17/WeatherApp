@@ -22,6 +22,10 @@ class WeatherVC: UIViewController, UITextFieldDelegate, WeatherDataDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
 
     //TODO:- TextField Delegates
     func textFieldDidEndEditing(_ textField: UITextField) {
